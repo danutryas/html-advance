@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <label for="salutation">Salutation</label>
+        <br />
+        <select name="salutation" id="salutation">
+          <option value="">--None--</option>
+          <option value="a">a</option>
+          <option value="b">b</option>
+          <option value="c">c</option>
+          <option value="d">d</option>
+        </select>
+        <br /><br />
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" placeholder="First Name" />
+        <br /><br />
+        <label for="lname">Last Name: </label>
+        <input type="text" id="lname" name="lname" />
+        <br /><br />
+        <label for="">Gender:</label>
+        <input type="radio" name="gender" id="male" />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" />
+        <label for="male">Female</label>
+        <br /><br />
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" />
+        <br /><br />
+        <label for="date">Date of Birth: </label>
+        <input type="date" name="date" id="date" />
+        <br /><br />
+        <label for="address">Address:</label>
+        <br />
+        <textarea
+          name="address"
+          id="address"
+          cols="30"
+          rows="3"
+          style="resize: none"
+        ></textarea>
+        <br /><br />
+        <button type="submit">Submit</button>
+        <input type="submit" value="Submit" />
+      </fieldset>
+
+      <!-- <label for=""></label>
+        <input type="text" name="" id="">
+        <input type="radio" name="" id="">
+        <input type="email" name="" id="">
+        <input type="date" name="" id="">
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <select name="" id="">
+            <option value=""></option>
+        </select>
+        <input type="submit" value=""> -->
+    </form>
+  </body>
+  <script>
+    const fname = document.getElementById("fname");
+    console.log(fname.value);
+  </script>
+</html>
